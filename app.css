@@ -43,7 +43,7 @@
     --black: #000000;
 
     /* MISCELLANEOUS  */
-    --nav-height: 300px;
+    --nav-height: 100px;
 
 }
 
@@ -203,11 +203,18 @@ span{
 
 /* >>>>> NAVBAR >>>>> */
 .navbar{
-    margin-bottom: 20rem;
+    /* margin-bottom: 20rem; */
     height: var(--nav-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
+.nav-btn-container{
+    display: flex;
+    gap: 2rem;
+}
 
 /* >>>>> Hero Sections >>>>> */
 
@@ -263,7 +270,7 @@ span{
     padding: 10rem 20rem;
     border-radius: 20px;
     margin: 0 auto;
-}
+} 
 
 .cta-heading{
     margin-bottom: 3rem;
@@ -272,7 +279,20 @@ span{
 /* >>>>> footer section */
  
 .footer{
-    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icon-container{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links-container{
+    display: flex;
+    gap: 1rem;
 }
 
 .social-icon{
